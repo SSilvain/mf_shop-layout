@@ -1,0 +1,185 @@
+.header {
+    background: url("../img/header_bg.jpg") no-repeat top;
+    // .header__top
+
+    &__top {
+    }
+
+    // .header__bottom
+
+    &__bottom {
+    }
+}
+.top-header {
+    // .top-header__content
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    // .top-header__column
+
+    &__column {
+        //flex-grow, flex-shrink, and flex-basis.
+        flex: 0 1 50%;
+        &_logo {
+            flex: 0 0 190px;
+            padding: 25px 0 0 0;
+            text-align: center;
+            align-self: flex-start;
+        }
+    }
+
+    // .top-header__logo
+
+    &__logo {
+    }
+
+    // .top-header__contacts
+
+    &__contacts {
+    }
+}
+._container {
+    // ._container
+
+    &_container {
+    }
+}
+.top {
+    // .top__header-column
+
+    &__header-column {
+    }
+
+    // .top__header-menu
+
+    &__header-menu {
+    }
+}
+.menu {
+    // .menu__icon
+
+    &__icon {
+    }
+
+    // .menu__body
+
+    &__body {
+    }
+
+    // .menu__list
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            flex: 0 1 33.333%;
+        }
+    }
+
+    // .menu__link
+
+    &__link {
+        font-family: Play, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        height: 27px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 12px;
+        text-decoration: underline;
+        border-radius: 20px;
+        @media (min-width: $md2+px) {
+            &:hover {
+                background-color: rgba(58, 58, 58, 0.096);
+            }
+        }
+    }
+}
+.icon-menu {
+}
+.contacts-header {
+    // .contacts-header__column
+
+    &__column {
+    }
+
+    // .contacts-header__item
+
+    &__item {
+        // .contacts-header__item_icon
+
+        &_icon {
+        }
+    }
+
+    // .contacts-header__label
+
+    &__label {
+    }
+
+    // .contacts-header__phone
+
+    &__phone {
+    }
+}
+.bottom-header {
+    // .bottom-header__container
+
+    &__container {
+    }
+
+    // .bottom-header__column
+
+    &__column {
+    }
+
+    // .bottom-header__actions
+
+    &__actions {
+    }
+
+    // .bottom-header__info
+
+    &__info {
+    }
+}
+.actions-header {
+    // .actions-header__login
+
+    &__login {
+    }
+
+    // .actions-header__reg
+
+    &__reg {
+    }
+
+    // .actions-header__email
+
+    &__email {
+    }
+}
+.info-header {
+    // .info-header__column
+
+    &__column {
+    }
+
+    // .info-header__callback
+
+    &__callback {
+    }
+
+    // .info-header__schedule
+
+    &__schedule {
+    }
+
+    // .info-header__cart
+
+    &__cart {
+    }
+}
