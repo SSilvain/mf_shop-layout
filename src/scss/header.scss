@@ -75,24 +75,38 @@
         display: flex;
         flex-wrap: wrap;
         li {
-            flex: 0 1 33.333%;
+            flex: 0 0 36%;
+            margin: 0 -2%;
         }
     }
 
     // .menu__link
 
     &__link {
-        font-family: Play, Arial, Helvetica, sans-serif;
+        font-family: Play;
+        color: #fff;
         font-size: 14px;
         height: 27px;
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        padding: 0 12px;
+        padding: 0 22px;
         text-decoration: underline;
         border-radius: 20px;
+        // position: relative;
+        // &:after {
+        //     content: "";
+        //     position: absolute;
+        //     bottom: 4px;
+        //     left: 50%;
+        //     margin-left: -30%;
+        //     height: 1px;
+        //     background-color: #000;
+        //     width: 60%;
+        // }
         @media (min-width: $md2+px) {
             &:hover {
+                text-decoration: underline;
                 background-color: rgba(58, 58, 58, 0.096);
             }
         }
@@ -101,9 +115,16 @@
 .icon-menu {
 }
 .contacts-header {
+    display: flex;
+    justify-content: center;
     // .contacts-header__column
 
     &__column {
+        border-right: 1px solid #fff;
+        padding: 0 30px;
+        &:last-child {
+            border: none;
+        }
     }
 
     // .contacts-header__item
@@ -112,17 +133,26 @@
         // .contacts-header__item_icon
 
         &_icon {
+            background: url("../img/icons/phone.png") left no-repeat;
+            padding: 0 0 0 37px;
         }
     }
 
     // .contacts-header__label
 
     &__label {
+        font-size: 12px;
+        font-weight: 300;
+        color: #fff;
     }
 
     // .contacts-header__phone
 
     &__phone {
+        font-size: 18px;
+        font-weight: 900;
+        color: #fff;
+        // font-family: roboto;
     }
 }
 .bottom-header {
