@@ -16,6 +16,7 @@
     &__content {
         display: flex;
         align-items: center;
+        height: 90px;
     }
 
     // .top-header__column
@@ -76,7 +77,7 @@
         flex-wrap: wrap;
         li {
             flex: 0 0 36%;
-            margin: 0 -2%;
+            margin: 1px -2%;
         }
     }
 
@@ -93,6 +94,7 @@
         padding: 0 22px;
         text-decoration: underline;
         border-radius: 20px;
+        transition: all 0.3s ease 0s;
         // position: relative;
         // &:after {
         //     content: "";
@@ -159,11 +161,15 @@
     // .bottom-header__container
 
     &__container {
+        display: flex;
+        height: 63px;
+        align-items: center;
     }
 
     // .bottom-header__column
 
     &__column {
+        flex: 0 1 50%;
     }
 
     // .bottom-header__actions
@@ -177,19 +183,39 @@
     }
 }
 .actions-header {
-    // .actions-header__login
+    display: flex;
+    align-items: center;
+    li {
+        margin: 0 54px 0 0;
+        a {
+            padding-left: 36px;
+            display: inline-block;
+        }
+    }
 
+    // .actions-header__login
     &__login {
+        background: url("../img/icons/login.png") no-repeat left;
+        color: #999;
+        line-height: 24px;
+        span {
+            border-bottom: 1px dotted;
+        }
     }
 
     // .actions-header__reg
 
     &__reg {
+        background: url("../img/icons/head.png") no-repeat left;
+        line-height: 34px;
+        height: 34px;
     }
 
     // .actions-header__email
 
     &__email {
+        background: url("../img/icons/email.png") no-repeat left;
+        line-height: 24px;
     }
 }
 .info-header {
