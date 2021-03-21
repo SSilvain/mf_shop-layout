@@ -179,7 +179,7 @@
     // .actions-header__login
     &__login {
         background: url("../img/icons/login.png") no-repeat left;
-        color: #999;
+        color: $bottomHeaderGray;
         line-height: 24px;
         span {
             border-bottom: 1px dotted;
@@ -191,12 +191,14 @@
         background: url("../img/icons/head.png") no-repeat left;
         line-height: 34px;
         height: 34px;
+        color: $blueLink;
     }
 
     // .actions-header__email
     &__email {
         background: url("../img/icons/email.png") no-repeat left;
         line-height: 24px;
+        color: $blueLink;
     }
 }
 .info-header {
@@ -221,13 +223,38 @@
         background: url("../img/icons/phone_blue.png") left no-repeat;
         padding-left: 32px;
         line-height: 20;
+        color: $blueLink;
     }
 
     // .info-header__schedule
     &__schedule {
+        background: url("../img/icons/schedule.png") left no-repeat;
+        padding-left: 37px;
+        font-style: 12px;
+        font-weight: 300;
+        line-height: 18px;
+        color: $bottomHeaderGray;
+        span {
+            font-weight: 900;
+        }
     }
 
     // .info-header__cart
     &__cart {
+        background: url("../img/icons/cart.png") left no-repeat;
+        width: 43px;
+        height: 43px;
+        display: inline-block;
+        position: relative;
+        span {
+            position: absolute;
+            padding: 0px 11px;
+            border-radius: 20px;
+            line-height: 25px;
+            background-color: $cartCountBackground;
+            right: 0;
+            transform: translate(70%, 0px);
+            color: $cartCountText;
+        }
     }
 }
