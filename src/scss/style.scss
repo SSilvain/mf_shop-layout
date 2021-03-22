@@ -14,7 +14,7 @@ $fontFamily: "Roboto";
 
 $minWidth: 320;
 $maxWidth: 1400;
-$maxWidthContainer: 1140;
+$maxWidthContainer: 1180;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
@@ -107,13 +107,9 @@ h6 {
     font-size: inherit;
     font-weight: 400;
 }
-/*--------------------*/
 
-.bigred {
-    font-size: 20px;
-    color: red;
-}
 /*Обнуление конец*/
+/*общие параметры*/
 body {
     color: #000;
     font-size: 14px;
@@ -123,7 +119,7 @@ body {
         overflow: hidden;
     }
 }
-
+/*общие параметры*/
 .wrapper {
     width: 100%;
     min-height: 100%;

@@ -62,11 +62,14 @@
 
     // .menu__list
     &__list {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 110px 130px 180px;
         li {
-            flex: 0 0 36%;
-            margin: 1px -2%;
+            margin: 1px 0;
+            @media (max-width: $md1+px) {
+                margin: 1px -6%;
+                grid-template-columns: 90px 110px 160px;
+            }
         }
     }
 
@@ -115,6 +118,10 @@
         &:last-child {
             border: none;
         }
+        @media (max-width: $md1+px) {
+            padding: 0 15px;
+            background-size: 15px;
+        }
     }
 
     // .contacts-header__item
@@ -138,6 +145,10 @@
         font-size: 18px;
         font-weight: 900;
         color: #fff;
+        white-space: nowrap;
+        @media (max-width: $md1+px) {
+            font-size: 16px;
+        }
     }
 }
 .bottom-header {
@@ -173,6 +184,9 @@
         a {
             padding-left: 36px;
             display: inline-block;
+            @media (max-width: $md1+px) {
+                padding-left: 20px;
+            }
         }
     }
 
@@ -222,8 +236,12 @@
         display: inline-block;
         background: url("../img/icons/phone_blue.png") left no-repeat;
         padding-left: 32px;
-        line-height: 20;
+        line-height: 20px;
         color: $blueLink;
+        @media (max-width: $md1+px) {
+            background-image: none;
+            padding-left: 0;
+        }
     }
 
     // .info-header__schedule
@@ -236,6 +254,10 @@
         color: $bottomHeaderGray;
         span {
             font-weight: 900;
+        }
+        @media (max-width: $md1+px) {
+            background-image: none;
+            padding-left: 0;
         }
     }
 
@@ -252,9 +274,13 @@
             border-radius: 20px;
             line-height: 25px;
             background-color: $cartCountBackground;
-            right: 0;
-            transform: translate(70%, 0px);
+            right: -25px;
+            top: -3px;
             color: $cartCountText;
+            font-size: 18px;
+            @media (max-width: $md1+px) {
+                right: -10px;
+            }
         }
     }
 }
